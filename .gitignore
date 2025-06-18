@@ -1,0 +1,218 @@
+# .gitignore for AI Project Assistant
+
+# === Python Core ===
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# === Virtual Environments ===
+# Common virtual environment directories
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.env/
+
+# Pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# === Testing ===
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Coverage reports
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# === Development Tools ===
+# mypy
+.mypy_cache/
+.dmypy.json
+dmyp.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# === IDEs and Editors ===
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# === Operating Systems ===
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# === Project Specific ===
+# Development and testing directories that might contain sensitive data
+test_projects/
+example_projects/
+temp_test_*/
+
+# Log files that might be generated during development
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# AI model files or large test data (if any)
+*.model
+*.pkl
+*.pickle
+
+# Local configuration files (if we add any)
+local_config.yaml
+local_config.json
+.env.local
+
+# Documentation build artifacts
+docs/_build/
+docs/.doctrees/
+
+# === AI Project Assistant Specific ===
+# Example AI directories from testing (we don't want to commit test AI/ directories)
+# Note: Real project AI/ directories should generally be committed by users
+test_*/AI/
+example_*/AI/
+temp_*/AI/
+
+# Development AI context files (for testing purposes)
+dev_AI_CONTEXT.yaml
+test_AI_CONTEXT.yaml
+
+# Generated preambles during development/testing
+dev_preamble_*.md
+test_preamble_*.md
+temp_preamble_*.md
+
+# Query logs from development/testing
+dev_logs_*.md
+dev_logs_*.json
+test_logs_*.md
+test_logs_*.json
+
+# === Security ===
+# API keys and sensitive data
+.env
+.env.production
+.env.local
+.env.development
+.env.test
+*.key
+*.pem
+*.p12
+secrets.yaml
+secrets.json
+
+# === Backup Files ===
+*.bak
+*.backup
+*.old
+*~.nib
+
+# === Jupyter Notebooks (if we add any) ===
+.ipynb_checkpoints/
+*.ipynb
+
+# === Package Manager Locks (be selective) ===
+# We want to keep requirements files but not lock files in some cases
+# Uncomment these if you want to ignore lock files:
+# poetry.lock
+# Pipfile.lock
+# requirements-lock.txt
+
+# === Build and Release ===
+# Build artifacts
+*.whl
+*.tar.gz
+
+# Release preparation
+release/
+staging/
